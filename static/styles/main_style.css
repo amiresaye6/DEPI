@@ -1,4 +1,5 @@
-root {
+/* general style  */
+:root {
     /* Primary */
 
     --Cyan: hsl(180, 66%, 49%);
@@ -16,3 +17,183 @@ root {
     --Very-Dark-Violet: hsl(260, 8%, 14%);
 
 }
+
+* {
+    font-weight: 100;
+    font-style: normal;
+}
+
+.global_container {
+    width: 75VW;
+    margin: auto;
+}
+html {
+	scroll-behavior: smooth;
+}
+    /* 
+body {
+    background-color: var(--Grayish-Violet);
+
+} */
+/* header style  */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 40px;
+}
+.header_container {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_sigup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features, .pricing,
+.header_container nav h1 {
+    padding-right: 20px;
+    color: var(--Very-Dark-Blue);
+}
+.header_container nav h1 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family:"Poppins";
+    padding-right: 40px;
+}
+.signup {
+    margin-left: 30px;
+}
+
+.resources, .pricing, .features, .login {
+    color: var(--Gray);
+    list-style: none;
+    font-weight: 600;
+}
+
+.signup {
+    width:  100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--Cyan);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+/* info part style  */
+.first_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.info {
+    width: 500px;
+    height: 400px;
+}
+.info h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--Very-Dark-Blue);
+}
+
+.info p {
+    padding-bottom: 20px;
+    color: var(--Gray);
+}
+
+.temp_photo {
+    background-image: url(../images/illustration-working.svg);
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+     background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.get_started {
+    background-color: var(--Cyan);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get_started a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+/* input card style  */
+.input_card {
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-color: var(--Dark-Violet);
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+     background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.input_card input {
+    width: 800px;
+    height: 40px;
+    margin-left: 60px;
+    padding-left: 20px;
+    border-radius: 10px;
+    /* color: var(--Gray); */
+    appearance: none;
+    font-size: 14px;
+}
+
+.input_card input::placeholder {
+    color: var(--Gray) /* Change to your desired color */
+}
+
+.input_card button {
+    appearance: none;
+}
+
+.shorten_it {
+    width:  150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--Cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+}
+
+
+/* advanced part style  */
