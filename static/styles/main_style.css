@@ -27,14 +27,16 @@
     width: 75VW;
     margin: auto;
 }
-html {
-	scroll-behavior: smooth;
-}
-    /* 
-body {
-    background-color: var(--Grayish-Violet);
 
-} */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 50lvh, hsl(225deg 33.33% 95.29%) 50%);
+
+}
+
 /* header style  */
 
 header {
@@ -44,6 +46,7 @@ header {
     height: 80px;
     margin-bottom: 40px;
 }
+
 .header_container {
     width: 75vw;
     display: flex;
@@ -63,29 +66,36 @@ header {
     align-items: center;
 }
 
-.features, .pricing,
+.features,
+.pricing,
 .header_container nav h1 {
     padding-right: 20px;
     color: var(--Very-Dark-Blue);
+    transition: .3s;
 }
+
 .header_container nav h1 {
     font-size: 30px;
     font-weight: 700;
-    font-family:"Poppins";
+    font-family: "Poppins";
     padding-right: 40px;
 }
+
 .signup {
     margin-left: 30px;
 }
 
-.resources, .pricing, .features, .login {
+.resources,
+.pricing,
+.features,
+.login {
     color: var(--Gray);
     list-style: none;
     font-weight: 600;
 }
 
 .signup {
-    width:  100px;
+    width: 100px;
     height: 40px;
     border-radius: 20px;
     background-color: var(--Cyan);
@@ -103,10 +113,12 @@ header {
     align-items: center;
     margin-top: 100px;
 }
+
 .info {
     width: 500px;
     height: 400px;
 }
+
 .info h1 {
     font-size: 55px;
     font-weight: 800;
@@ -115,8 +127,11 @@ header {
 }
 
 .info p {
-    padding-bottom: 20px;
-    color: var(--Gray);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--Grayish-Violet);
+    line-height: 1.2;
 }
 
 .temp_photo {
@@ -124,7 +139,7 @@ header {
     width: 500px;
     height: 500px;
     background-size: contain;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
 
 }
@@ -139,14 +154,16 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .get_started a {
     color: white;
     width: 100%;
     height: 100%;
     text-align: center;
     margin-top: 20px;
-    
+
 }
+
 /* input card style  */
 .input_card {
     background-image: url(../images/bg-boost-desktop.svg);
@@ -155,7 +172,7 @@ header {
     height: 150px;
     border-radius: 10px;
     background-size: cover;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
 
     display: flex;
@@ -176,7 +193,8 @@ header {
 }
 
 .input_card input::placeholder {
-    color: var(--Gray) /* Change to your desired color */
+    color: var(--Gray)
+        /* Change to your desired color */
 }
 
 .input_card button {
@@ -184,7 +202,7 @@ header {
 }
 
 .shorten_it {
-    width:  150px;
+    width: 150px;
     height: 40px;
     border-radius: 15px;
     background-color: var(--Cyan);
@@ -193,7 +211,171 @@ header {
     align-items: center;
     color: white;
     margin-right: 40px;
+    margin-left: 40px;
 }
 
 
 /* advanced part style  */
+.advanced_card {
+    height: 200px;
+    margin-top: 150px;
+}
+
+.advanced_card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+
+.advanced_card p {
+    text-align: center;
+    font-size: 20px;
+    color: var(--Grayish-Violet);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* advanced cards section */
+
+.advanced_cards {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.card div {
+    width: 90px;
+    height: 90px;
+    background-color: var(--Dark-Violet);
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h1 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Dark-Violet);
+}
+
+.card p {
+    margin-top: 20px;
+    line-height: 1.3;
+    color: var(--Grayish-Violet);
+    font-weight: 600;
+}
+
+.card_2 {
+    position: relative;
+    top: 50px;
+}
+
+.card_3 {
+    position: relative;
+    top: 100px;
+}
+
+/* end page style */
+
+.end_page {
+    height: 250px;
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-color: var(--Dark-Violet);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.end_page h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.book_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.end_page button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--Cyan);
+    border-radius: 40px;
+    border: none;
+}
+
+/* footer style  */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Violet);
+}
+.footer_container {
+    width: 75VW;
+    height: 200px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div ul li {
+    margin-top: 20px;
+}
+
+div ul li a {
+    color: var(--Grayish-Violet);
+    font-size: 14px;
+    font-weight: 600;
+}
+.custom_selector h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.footer_log {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 200px;
+}
+
+.connection {
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+}
+
+/* hovering style part  */
+
+.features:hover {
+    color: var(--Dark-Violet);
+}
