@@ -11,8 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- styling links -->
-    <link rel="stylesheet" href="../static/styles/normalize.css">
-    <link rel="stylesheet" href="../static/styles/main_style.css">
+    <!-- <link rel="stylesheet" href="../static/styles/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="../static/styles/main_style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}"> -->
     <title>Shortly</title>
 </head>
 
@@ -48,7 +51,9 @@
         </div>
         <div class="input_card">
             <input type="text" placeholder="Shorten a link here..." id="input_url">
-            <div class="shorten_it">Shorten it!</div>
+            <div class="shorten_it" id="shorter">Shorten it!</div>
+        </div>
+        <div class="output_card" id="output_card">
         </div>
         <div class="advanced_card">
             <h1>Advanced Statistics</h1>
@@ -158,7 +163,9 @@
             </div>
         </div>
     </footer>
-
+    <!-- <script src="../static/js/script.js"></script> -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 
 </html>
