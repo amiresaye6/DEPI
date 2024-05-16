@@ -1,0 +1,111 @@
+/*                           general style                                   */
+
+
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*                           header stuyle                                   */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.lgo {
+    font-size: 28px;
+    font-weight: 700;
+    color: darkslategrey;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: darkslategrey;
+    margin-right: 5%;
+
+}
+
+.navLinks a {
+    color: darkslategrey;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: rgb(62, 137, 137);
+}
+
+.github_link {
+    margin-right: 20px;
+}
+
+.img_landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/*                           body stuyle                                   */
+
+
+.img_landscape img {
+    border-radius: 20px;
+}
+
+.table_header {
+    text-align: center;
+    font-weight: 500;
+    color: darkslategrey;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #268ab2;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
