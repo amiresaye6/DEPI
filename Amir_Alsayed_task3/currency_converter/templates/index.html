@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/normalize.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
+        <!-- font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+            rel="stylesheet">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Currency Converter</div>
+        <nav>
+            <a href="https://www.linkedin.com/in/amir-elsayed-/" class="linkedin" target="_blank">LinkedIn</a>
+            <a href="https://github.com/amiresaye6" class="Github" target="_blank">Github</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main_card">
+            <h1>Currency Converter</h1>
+            <section class="form">
+                <input type="number" name="amount" id="amount" required placeholder="Enter amount">
+                <select name="from_currency" id="from_currency">
+                    <option value="USD">USD</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <select name="to_currency" id="to_currency">
+                    <option value="USD">USD</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <button id="submit">Convert</button>
+            </section>
+            <div class="result">
+                <h2>Result: </h2>
+                <p id="result">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

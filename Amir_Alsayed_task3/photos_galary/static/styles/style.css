@@ -1,0 +1,125 @@
+.body {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo img {
+  width: 200px;
+  height: auto;
+}
+
+.main_img {
+  width: 60%;
+}
+
+/* Header styles */
+header {
+  background-color: #3AA6B9;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+header nav a, p a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Change color on hover for links */
+header nav a:hover{
+  color: #C3FF93;
+}
+
+/* Section and photos */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo {
+  margin: 10px;
+  width: 220px;
+  border-left: 5px solid #CBFFA9;
+  padding-left: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+.photo:hover {
+  border-left: 5px solid #36BA98;
+}
+
+/* Main photo style */
+.main_photo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main_photo .main_img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* info style */
+.info {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+}
+
+.info h1 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  width: fit-content;
+  line-height: 40px;
+}
+.info h2 {
+  color: #333;
+  font-size: 20px;
+  width: fit-content;
+}
+/* Footer styles */
+footer {
+  text-align: start;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: fit-content;
+}
+footer a {
+  color: black;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+
+footer p a:hover {
+  color: #3AA6B9;
+}

@@ -1,0 +1,98 @@
+/* General body styling */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 90vh;
+    background: url("../images/background.jpg") no-repeat center center/cover;
+}
+
+/* Header styles */
+header {
+    background-color: #3AA6B9;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+header nav a,
+p a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Change color on hover for links */
+header nav a:hover {
+    color: #C3FF93;
+}
+
+/* Container for the currency converter */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the main card that holds the form and result */
+.main_card {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main_card h1 {
+    color: #333;
+}
+
+/* Styling for the form inputs and selects */
+.form input,
+.form select,
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form input {
+   width: 97%;
+}
+/* Button styling */
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+/* Result section styling */
+.result h2 {
+    color: #333;
+    padding-top: 20px;
+}
+
+.result p {
+    font-size: 24px;
+    color: #4CAF50;
+    padding-top: 20px;
+}
